@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omnoe Studio | Official Website</title>
     <style>
+         /* 1. Mendaftarkan file .ttf kustom Anda ke dalam CSS */
+        @font-face {
+            font-family: 'OmnoeCustomFont'; /* Ini nama bebas untuk font Anda di kode */
+            src: url('font_for_github.ttf') format('truetype'); /* Pastikan namanya persis dengan nama file di GitHub */
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* 2. Menggunakan nama font kustom yang sudah didaftarkan di atas */
+            font-family: 'OmnoeCustomFont', BCASansBold;
             background-color: #121212;
             color: #ffffff;
             margin: 0;
@@ -21,28 +30,24 @@
             max-width: 600px;
             padding: 20px;
         }
-        /* Mengatur logo utama */
         .logo {
             width: 120px;
             height: auto;
             margin-bottom: 10px;
             border-radius: 10px;
         }
-        /* Wadah untuk ikon horizontal */
         .icon-bar {
             display: flex;
             justify-content: center;
-            gap: 15px; /* Jarak antar ikon kecil */
+            gap: 15px;
             margin-bottom: 25px;
         }
-        /* Mengatur ukuran ikon kecil */
         .small-icon {
-            width: 32px; /* Ukuran ikon kecil */
+            width: 32px;
             height: auto;
             transition: transform 0.2s, opacity 0.2s;
             opacity: 0.8;
         }
-        /* Efek saat ikon kecil disorot/sentuh */
         .small-icon:hover {
             transform: scale(1.15);
             opacity: 1;
@@ -107,7 +112,7 @@
         <p>Omnoe Studio is driven by the vision of a solo game developer who believes that great games don’t always have to come from big-name studios. Omnoe is dedicated to designing games with unique concepts, featuring distinct mechanics and a challenging difficulty level—easy to pick up, yet difficult to master. Please support me so I can keep growing!</p>
         
         <!-- Tombol email support mengarah ke omnoe.studio@gmail.com -->
-        <a href="mailto:omnoe.studio@gmail.com" class="btn-contact">Contact Support</a>
+        <a href="mailto:omnoe.studio@gmail.com" class="btn-contact">Contact Email</a>
         
         <div class="footer">
             &copy; 2026 Omnoe Studio. All Rights Reserved.
